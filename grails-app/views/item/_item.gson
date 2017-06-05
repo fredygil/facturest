@@ -1,0 +1,12 @@
+import facturest.Item
+
+model {
+	Item item
+}
+
+json {
+	id	item.id
+	item item.item
+	cantidad item.cantidad
+	valor item.valor
+}

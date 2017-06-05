@@ -1,0 +1,7 @@
+import facturest.Factura
+
+model {
+	Factura factura
+}
+
+json tmpl.factura(factura)

@@ -1,0 +1,18 @@
+import facturest.Factura
+
+model {
+	Factura factura
+}
+
+json {
+	id	factura.id
+	numero	factura.numero
+	fecha	factura.fecha
+	valor	factura.valor
+	cliente {
+		id	factura.cliente.id
+		nombre factura.cliente.nombre
+		telefono factura.cliente.telefono
+	}
+	items g.render(factura.items)
+}

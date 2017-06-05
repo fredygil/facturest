@@ -1,0 +1,15 @@
+import facturest.Cliente
+
+model {
+	Cliente cliente
+}
+
+json {
+	id	cliente.id
+	documento	cliente.documento
+	nombre	cliente.nombre
+	telefono	cliente.telefono
+	direccion cliente.direccion
+	email	cliente.email
+
+}

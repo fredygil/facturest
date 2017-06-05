@@ -1,0 +1,8 @@
+import facturest.Factura
+
+model {
+	Iterable<Factura> facturaList
+}
+
+json tmpl.factura(facturaList ?: [])
+
