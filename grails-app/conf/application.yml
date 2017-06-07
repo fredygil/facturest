@@ -32,6 +32,7 @@ endpoints:
     jmx:
         enabled: true
 
+
 ---
 grails:
     mime:
@@ -115,3 +116,11 @@ environments:
                 testOnReturn: false
                 jdbcInterceptors: ConnectionState
                 defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
+
+
+
+
+grails:
+    cors:
+        enabled: true
+
